@@ -60,13 +60,6 @@ Built with:
 
 In most cases, we strongly recommend using the [next/image](https://nextjs.org/docs/api-reference/next/image) component for optimizing how you load images. For the next-movies app, there are a few app-specific reasons we currently don't use the component. Using `react-lazyload`, we lazy-load the entire `MovieListItem` component (for example), where elements like the movie name and star ratings don't load until they get near the viewport. This behavior is currently not possible with next/image. In the future, there may be more "Suspense"-y ways of approaching images in React/Next, which would make this type of pattern more first-class. Until then, check out our approach, but you'll likely be otherwise be able to make next/image work for you.
 
-## Authors
-
-- [@anton-karlovskiy](https://github.com/anton-karlovskiy)
-- [@addyosmani](https://github.com/addyosmani)
-
-Based on the original `create-react-app` foundation by [@fidalgodev](https://github.com/fidalgodev/movie-library-react).
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
